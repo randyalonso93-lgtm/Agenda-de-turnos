@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Agenda de Turnos</string>
+    <string-array name="estados_turno">
+        <item>Pendiente</item>
+        <item>Realizado</item>
+        <item>Cancelado</item>
+    </string-array>
+
+</resources>

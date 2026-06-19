@@ -1,0 +1,58 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Nombre del cliente -->
+        <TextView
+            android:id="@+id/tvCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente: Juan Pérez"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1A237E"/>
+
+        <!-- Servicio -->
+        <TextView
+            android:id="@+id/tvServicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicio: Corte de pelo"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Fecha y hora -->
+        <TextView
+            android:id="@+id/tvFechaHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19/06/2026 - 10:00 AM"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Estado del turno -->
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendiente"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#E53935"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
