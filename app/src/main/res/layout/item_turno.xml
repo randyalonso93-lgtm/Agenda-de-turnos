@@ -54,5 +54,13 @@
             android:textSize="13sp"
             android:textColor="#E53935"
             android:layout_marginTop="6dp"/>
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/delete"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical"/>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -12,29 +12,23 @@
         android:layout_height="?attr/actionBarSize"
         android:background="#1A73E8"
         app:title="Agenda de Turnos"
-        app:titleTextColor="#FFFFFF"
-        app:navigationIcon="@android:drawable/ic_menu_help"/>
+        app:titleTextColor="#FFFFFF" />
 
-    <!-- Título debajo de la barra -->
-    <TextView
-        android:id="@+id/tvTitulo"
+    <!-- Tabs -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista de Turnos"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="12dp"
-        android:textColor="#1A237E"/>
+        app:tabIndicatorColor="#1A73E8"
+        app:tabSelectedTextColor="#1A73E8"
+        app:tabTextColor="#777777"/>
 
-    <!-- Lista de turnos -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerTurnos"
+    <!-- ViewPager para los fragmentos -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="12dp"
-        android:clipToPadding="false"
-        android:scrollbars="vertical"/>
+        android:layout_weight="1"/>
 
     <!-- Botón flotante -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -46,6 +40,7 @@
         app:srcCompat="@android:drawable/ic_input_add"
         app:backgroundTint="#1A73E8"/>
 </LinearLayout>
+
 
 
 
